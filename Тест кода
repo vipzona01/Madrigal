@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <!-- ▶ SEO-МЕТАДАННЫЕ ДЛЯ ЯНДЕКС И GOOGLE -->
+    <title>MADRIGAL • Театр интерьерной куклы | Премиум фарфор и шёлк ручной работы</title>
+    <meta name="description" content="MADRIGAL — театр интерьерной куклы. Арлекины, подвесные куклы, фарфоровый декор премиум-класса ручной работы. Шелк, кружево, кристаллы Swarovski. Москва.">
+    <meta name="keywords" content="кукла, фарфоровая кукла, интерьерная кукла, подвесная кукла, арлекин, шут, театр кукол, премиум декор, ручная работа, Madrigal, Екатерина Мадригаль, Москва">
+    <meta name="author" content="Madrigal">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://madrigal.ru/">
+
+    <!-- Yandex Webmaster verification (замените content на ваш код) -->
+    <meta name="yandex-verification" content="ваш_код_подтверждения">
+    <meta name="theme-color" content="#d4af37">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Madrigal">
+    <meta property="og:url" content="https://madrigal.ru/">
+    <meta property="og:title" content="MADRIGAL • Театр интерьерной куклы">
+    <meta property="og:description" content="Арлекины, подвесные куклы, фарфоровый декор премиум-класса. Ручная работа из шёлка, кружева и кристаллов Swarovski. Москва.">
+    <meta property="og:image" content="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5D77WTEd.jpg">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MADRIGAL • Театр интерьерной куклы">
+    <meta name="twitter:description" content="Арлекины, подвесные куклы, фарфоровый декор премиум-класса. Ручная работа из шёлка, кружева и кристаллов Swarovski.">
+    <meta name="twitter:image" content="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5D77WTEd.jpg">
+
+    <!-- Schema.org / JSON-LD для локального бизнеса и организации -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Madrigal",
+            "alternateName": "Театр интерьерной куклы Madrigal",
+            "url": "https://madrigal.ru/",
+            "logo": "https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_TbTUSuYR.jpg",
+            "description": "Премиальные интерьерные куклы ручной работы. Арлекины, подвесные куклы, фарфоровый декор. Шёлк, кружево, кристаллы Swarovski.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Пречистенка, 42",
+                "addressLocality": "Москва",
+                "addressCountry": "RU"
+            },
+            "telephone": "+7 (495) 123-45-67",
+            "email": "madrigal@imperial.ru",
+            "sameAs": [
+                "https://www.instagram.com/madrigal_dolls"
+            ]
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --gold: #d4af37;
+            --gold-light: #f9e076;
+            --gold-dark: #9e7e2c;
+            --burgundy: #4b0e1b;
+            --bg-dark: #3b3b3b;
+            --bg-section: rgba(55, 55, 55, 0.92);
+            --text-light: #e0e0e0;
+            --text-heading: #ffffff;
+        }
+
+        body {
+            background: #2a2a2a;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-light);
+            overflow-x: hidden;
+            line-height: 1.7;
+            font-weight: 300;
+            margin: 0;
+            position: relative;
+        }
+
+        /* ▶ SILVER GRADIENT – ОСНОВНАЯ ПОДЛОЖКА */
+        .palace-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -3;
+            pointer-events: none;
+            background:
+                radial-gradient(circle at 30% 50%, #f8f8ff 0%, #a9b0c0 25%, #788090 60%, #4a505c 100%),
+                linear-gradient(165deg, #e3e8ef 0%, #b5becb 40%, #6f7a8c 80%, #3e4349 100%);
+        }
+
+        .palace-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -2;
+            pointer-events: none;
+            background:
+                repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0px, rgba(255, 255, 255, 0.05) 2px, transparent 2px, transparent 8px),
+                radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 20% 80%, rgba(0, 0, 0, 0.2) 0%, transparent 40%),
+                radial-gradient(ellipse at 80% 80%, rgba(0, 0, 0, 0.2) 0%, transparent 40%);
+        }
+
+        .column-left,
+        .column-right {
+            position: fixed;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(44, 12, 18, 0.8) 0%, rgba(107, 29, 43, 0.8) 50%, rgba(44, 12, 18, 0.8) 100%);
+            box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.3);
+            z-index: -1;
+        }
+
+        .column-left {
+            left: 0;
+            border-right: 2px solid var(--gold);
+        }
+
+        .column-right {
+            right: 0;
+            border-left: 2px solid var(--gold);
+        }
+
+        .column-left::after,
+        .column-right::after {
+            content: "⚜";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: var(--gold);
+            opacity: 0.7;
+        }
+
+        .main-wrapper {
+            position: relative;
+            z-index: 2;
+            background: rgba(30, 30, 30, 0.85);
+            backdrop-filter: blur(12px);
+            border-left: 1px solid rgba(212, 175, 55, 0.4);
+            border-right: 1px solid rgba(212, 175, 55, 0.4);
+            box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+            max-width: 1320px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 0 25px;
+            border-bottom: 2px solid transparent;
+            border-image: linear-gradient(90deg, transparent, var(--gold), transparent) 1;
+            margin-bottom: 30px;
+        }
+
+        .logo-block {
+            display: inline-flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .logo-img {
+            height: 90px;
+            filter: drop-shadow(0 6px 12px rgba(180, 148, 46, 0.6));
+            transition: all 0.6s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 6px 20px rgba(212, 175, 55, 0.8));
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 500;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+            line-height: 1;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--gold-dark);
+            margin-top: 5px;
+        }
+
+        /* ▶ HERO – ВОЗВРАЩАЕМ ОРИГИНАЛЬНУЮ КАРТИНКУ */
+        .hero {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            margin: 40px 0 80px;
+            padding: 60px 40px;
+            background: url('https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_cUpAbohE.jpg') center/cover no-repeat, #1a1a1a;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.6);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            min-height: 500px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 70%);
+            z-index: 1;
+        }
+
+        .hero-content,
+        .hero-visual {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-content {
+            flex: 1 1 500px;
+        }
+
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
+            font-weight: 500;
+            line-height: 1.2;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+            margin-bottom: 25px;
+        }
+
+        .hero-title small {
+            display: block;
+            font-size: 1.5rem;
+            color: var(--gold-light);
+            font-style: italic;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero-text {
+            font-size: 1.1rem;
+            font-weight: 300;
+            max-width: 480px;
+            margin-bottom: 35px;
+            border-left: 4px solid var(--gold);
+            padding-left: 25px;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+            color: #f0e6d2;
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-royal {
+            display: inline-block;
+            background: linear-gradient(45deg, #4b0e1b, #6d1827);
+            color: #fdfaf0;
+            padding: 16px 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px solid var(--gold);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+            transition: 0.4s ease;
+            cursor: pointer;
+        }
+
+        .btn-royal:hover {
+            background: linear-gradient(45deg, #6d1827, #4b0e1b);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.7);
+            letter-spacing: 5px;
+        }
+
+        .hero-visual {
+            flex: 1 1 400px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* ФОТО ВО ВСЮ РАМКУ */
+        .royal-frame {
+            width: 340px;
+            height: 440px;
+            background-image: url('https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5D77WTEd.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 3px solid var(--gold);
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(212, 175, 55, 0.4);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+            cursor: pointer;
+            transition: all 0.4s ease;
+            touch-action: manipulation;
+        }
+
+        .royal-frame:hover {
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.7), 0 0 20px rgba(0, 0, 0, 0.6);
+            transform: scale(1.02);
+        }
+
+        .royal-frame::before,
+        .royal-frame::after {
+            content: "⚜";
+            position: absolute;
+            font-size: 2.5rem;
+            color: var(--gold);
+            opacity: 0.9;
+            text-shadow: 0 0 10px #000;
+        }
+
+        .royal-frame::before {
+            top: -18px;
+            left: calc(50% - 18px);
+        }
+
+        .royal-frame::after {
+            bottom: -18px;
+            left: calc(50% - 18px);
+        }
+
+        .frame-text {
+            font-size: 2rem;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        .frame-label {
+            font-size: 0.8rem;
+            letter-spacing: 4px;
+            margin-top: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 4px 15px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border: 4px solid var(--gold);
+            box-shadow: 0 0 40px rgba(212, 175, 55, 0.5);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+            color: var(--gold);
+            font-size: 2.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .modal-close:hover {
+            color: #fff;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 500;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: var(--gold);
+            margin: 15px auto 0;
+        }
+
+        .section-sub {
+            text-align: center;
+            color: var(--gold-dark);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            font-size: 0.85rem;
+        }
+
+        .lead-block {
+            max-width: 800px;
+            margin: 30px auto;
+            font-size: 1.1rem;
+            text-align: center;
+            font-style: italic;
+            color: var(--text-light);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--bg-section);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            transition: 0.3s;
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .process-step:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .step-icon {
+            font-size: 2.8rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .flagship-section {
+            position: relative;
+            margin-top: 80px;
+            background: url('https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_75DIqMOD.jpg') center / cover no-repeat;
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.3);
+            padding: 80px 40px;
+            overflow: hidden;
+        }
+
+        .flagship-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .flagship-inner {
+            position: relative;
+            z-index: 2;
+            color: #fff;
+            text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .gallery-item {
+            background: var(--bg-section);
+            backdrop-filter: blur(5px);
+            border: 1.5px solid var(--gold);
+            padding: 20px;
+            text-align: center;
+            transition: 0.4s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 220px;
+            margin-bottom: 15px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            background-color: #1a1a1a;
+            cursor: pointer;
+        }
+
+        .assortment-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+
+        .assortment-item {
+            flex: 1 1 220px;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .assortment-img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border: 1px solid var(--gold);
+            background: #1a1a1a;
+            display: block;
+            cursor: pointer;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .testimonial-card {
+            background: var(--bg-section);
+            backdrop-filter: blur(5px);
+            border-left: 4px solid var(--gold);
+            padding: 35px 25px;
+            color: var(--text-light);
+        }
+
+        .faq-block {
+            max-width: 800px;
+            margin: 60px auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 20px 0;
+            cursor: pointer;
+            touch-action: manipulation;
+        }
+
+        .faq-question {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            pointer-events: none;
+        }
+
+        .faq-answer {
+            margin-top: 12px;
+            display: none;
+            font-size: 0.95rem;
+            color: var(--text-light);
+            padding-left: 20px;
+            border-left: 2px solid var(--gold);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 70px 0;
+            background: var(--bg-section);
+            backdrop-filter: blur(5px);
+            padding: 45px;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+        }
+
+        .contact-form {
+            flex: 1 1 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 14px 18px;
+            background: rgba(20, 20, 20, 0.8);
+            border: 1px solid var(--gold-dark);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text-light);
+            transition: 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        .contact-info {
+            flex: 1 1 200px;
+            padding-top: 20px;
+            font-size: 1rem;
+        }
+
+        .footer-imperial {
+            margin-top: 80px;
+            padding: 60px 0 30px;
+            background: linear-gradient(to bottom, rgba(20, 20, 20, 0.9) 0%, rgba(10, 10, 10, 0.9) 100%);
+            border-top: 3px solid var(--gold);
+            position: relative;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .footer-imperial::before {
+            content: "♚";
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3rem;
+            color: var(--gold);
+            background: #151515;
+            padding: 0 20px;
+        }
+
+        .footer-motto {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin: 10px 0;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 25px 0;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold-dark);
+        }
+
+        .footer-links a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--gold);
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+        }
+
+        .copyright {
+            font-size: 0.75rem;
+            opacity: 0.7;
+            margin-top: 20px;
+            color: #aaa;
+        }
+
+        @media (max-width: 768px) {
+            .column-left,
+            .column-right {
+                display: none;
+            }
+            .container {
+                padding: 0 15px;
+            }
+            .brand-name {
+                font-size: 2.5rem;
+            }
+            .hero {
+                flex-direction: column;
+                padding: 30px 20px;
+                min-height: 450px;
+            }
+            .hero-title {
+                font-size: 2.2rem;
+            }
+            .royal-frame {
+                width: 250px;
+                height: 320px;
+            }
+            .flagship-section {
+                padding: 50px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="palace-bg"></div>
+<div class="palace-overlay"></div>
+<div class="column-left"></div>
+<div class="column-right"></div>
+
+<div class="main-wrapper">
+    <div class="container">
+        <header class="header">
+            <div class="logo-block">
+                <img src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_TbTUSuYR.jpg" alt="Madrigal логотип" class="logo-img">
+                <h1 class="brand-name">Madrigal</h1>
+            </div>
+            <p class="subtitle">Театр интерьерной куклы</p>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <small>Роскошь, достойная обрамления</small>
+                    Шелк, старинное кружево<br>и фарфоровая пластика
+                </h2>
+                <p class="hero-text">Каждая кукла Madrigal — персонаж, оживающий в вашем интерьере. Арлекины, маски и королевский фарфор: мы создаём не куклы, а произведения театрального искусства.</p>
+                <a href="#contact" class="btn-royal">Обсудить проект</a>
+            </div>
+            <div class="hero-visual">
+                <div class="royal-frame lightbox" id="exclusive-frame" title="Нажмите, чтобы увеличить" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5D77WTEd.jpg">
+                    <span class="frame-text">Арлекин</span>
+                    <span class="frame-label">эксклюзив</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Концепция бренда</h2>
+            <p class="lead-block">Madrigal — это не просто аксессуары. Это персонажи, застывшие в вашем доме.</p>
+            <div style="max-width:800px; margin: 0 auto 30px; color: var(--text-light);">
+                <p>Мы возрождаем традицию итальянского театра масок, соединяя её с изысканностью французского декора и восточной школой фарфора. Каждая кукла рождается в единственном экземпляре и несёт в себе отпечаток личности мастера. Вдохновение мы черпаем в старинных гравюрах, оперных постановках и дворцовой эстетике.</p>
+                <p style="margin-top: 20px;">Ключевая идея — <strong style="color: var(--gold);">Индивидуальность</strong>. Вы никогда не встретите двух одинаковых «Мадригалов». Каждая работа — это синтез высокой моды, скульптуры и театрального грима. Именно поэтому наши куклы становятся центральными экспонатами частных коллекций и арт-объектами в дизайнерских интерьерах.</p>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="#contact" class="btn-royal">Стать обладателем уникальной куклы</a>
+            </div>
+        </section>
+
+        <section class="flagship-section">
+            <div class="flagship-inner">
+                <h2 class="section-title" style="color: #fff;">Флагманская коллекция<br>«Арлекины Madrigal»</h2>
+                <p class="section-sub" style="color: var(--gold-light);">Синтез высокой моды и скульптуры</p>
+                <div style="max-width:800px; margin: 30px auto; color: #f0e6d2; text-shadow: 0 2px 6px #000;">
+                    <p>Арлекин — визитная карточка бренда. Это не просто кукла, а полноценный театральный персонаж, замерший в движении. Мы создаём его по канонам итальянской комедии дель арте, но в современном прочтении: строгие линии, благородные ткани и ювелирный декор.</p>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step" style="background: rgba(0,0,0,0.4);"><div class="step-icon">🎭</div><h3>Фарфоровая пластика</h3><p>Лица и кисти рук выполняются из высококачественного итальянского фарфора и китайского бисквита для эффекта «живой кожи».</p></div>
+                    <div class="process-step" style="background: rgba(0,0,0,0.4);"><div class="step-icon">🖌️</div><h3>Ручная роспись</h3><p>Театральный грим наносится вручную: виньетки, слёзы, усмешки. Инкрустация кристаллами Swarovski.</p></div>
+                    <div class="process-step" style="background: rgba(0,0,0,0.4);"><div class="step-icon">🧵</div><h3>Костюм Lussurri</h3><p>Итальянский шёлк Como, тяжёлый турецкий шёлк, винтажное кружево. Каждый наряд отшивается вручную.</p></div>
+                    <div class="process-step" style="background: rgba(0,0,0,0.4);"><div class="step-icon">✨</div><h3>Декор</h3><p>Ручная вышивка пайетками, стеклярусом, антикварные подвески. Костюм дополняется аксессуарами.</p></div>
+                </div>
+                <p class="lead-block" style="color: #fff;">Каждая модель вариативна. Арлекин может быть выполнен в черно-серебряной гамме (под модерн) или в пурпурно-золотой (под классику).</p>
+                <div style="text-align: center; margin-top: 30px;" class="btn-royal-wrap">
+                    <a href="#contact" class="btn-royal">Заказать своего Арлекина</a>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <h2 class="section-title">Ассортимент Madrigal</h2>
+            <p class="section-sub">Четыре формата присутствия в доме</p>
+            <div class="assortment-grid">
+                <div class="assortment-item">
+                    <img src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_PdkXjziS.jpg" alt="Большие интерьерные куклы" class="assortment-img lightbox" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_PdkXjziS.jpg">
+                    <h3 style="font-family: 'Playfair Display', serif; color: var(--gold); margin: 15px 0 10px;">👑 Большие интерьерные куклы</h3>
+                    <p>Рост от 40 до 70 см. Статичные, но живые позы. Подходят для зоновых столов, консолей, каминных полок. Каждая кукла устанавливается на авторскую подставку с клеймом.</p>
+                </div>
+                <div class="assortment-item">
+                    <img src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_hmlZniVj.jpg" alt="Подвесные куклы" class="assortment-img lightbox" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_hmlZniVj.jpg">
+                    <h3 style="font-family: 'Playfair Display', serif; color: var(--gold); margin: 15px 0 10px;">🎄 Подвесные куклы (Chandelier Dolls)</h3>
+                    <p>Облегчённые фарфоровые миниатюры для новогодних ёлок, карнизов, люстр и бра. Парящие Арлекины на шёлковых нитях — эффект дорогой игрушки.</p>
+                </div>
+                <div class="assortment-item">
+                    <img src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_HUxRK7hs.jpg" alt="Сезонный декор" class="assortment-img lightbox" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_HUxRK7hs.jpg">
+                    <h3 style="font-family: 'Playfair Display', serif; color: var(--gold); margin: 15px 0 10px;">🥚 Сезонный декор «Каприз»</h3>
+                    <p>Лимитированные серии: новогодние шары Madrigal с ручной росписью, пасхальные яйца из фарфора, инкрустированные кружевом и бисером.</p>
+                </div>
+                <div class="assortment-item">
+                    <img src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_CMKkl2cc.jpeg" alt="Свечи и свет" class="assortment-img lightbox" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_CMKkl2cc.jpeg">
+                    <h3 style="font-family: 'Playfair Display', serif; color: var(--gold); margin: 15px 0 10px;">🕯️ Интерьерная парфюмерия и свет</h3>
+                    <p>Свечи в резных фарфоровых гильзах с ароматами старой библиотеки. Вазоны и светильники в единой стилистике с куклами.</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="#contact" class="btn-royal">Выбрать формат для своего интерьера</a>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px; background: var(--bg-section); padding: 50px 30px; border: 1px solid var(--gold);">
+            <h2 class="section-title">Технология и уникальность</h2>
+            <div class="process-grid" style="margin-top: 40px;">
+                <div class="process-step"><strong>100% ручная работа</strong><br>Никаких форм и конвейера. Каждая деталь лепится, шьётся и расписывается вручную.</div>
+                <div class="process-step"><strong>Смешение культур</strong><br>Итальянский фарфор, китайский бисквит, турецкий шёлк — материалы со всего мира.</div>
+                <div class="process-step"><strong>Кристаллы Swarovski</strong><br>Только сертифицированные камни для инкрустации лиц и костюмов.</div>
+                <div class="process-step"><strong>Клеймо Madrigal</strong><br>Каждая кукла имеет авторскую подпись и уникальный номер экземпляра.</div>
+            </div>
+            <p class="lead-block">Ваша кукла — инвестиция в искусство.</p>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <h2 class="section-title">Образ, который остаётся в памяти</h2>
+            <div style="max-width: 800px; margin: 0 auto; background: var(--bg-section); backdrop-filter: blur(5px); padding: 40px; border-left: 4px solid var(--gold); font-style: italic; font-size: 1.2rem; color: var(--text-light);">
+                «Матовое лицо из фарфора, живое благодаря румянцу, нанесённому маслом. Битое кружево венецианского узора. Арлекин держит в фарфоровой ручке новогодний шар со стразами. Он стоит у камина, пока в углу комнаты мерцает свеча Madrigal в такой же фактуре.»
+            </div>
+            <p class="lead-block">Именно так выглядит дом, в котором поселился Madrigal.</p>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#contact" class="btn-royal">Визуализировать интерьер с куклой</a>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <h2 class="section-title">Для кого созданы Madrigal</h2>
+            <div class="process-grid">
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400" alt="Дизайнер интерьеров" class="lightbox" style="width:100%; height:160px; object-fit: contain; object-position: center; border:1px solid var(--gold); margin-bottom:15px; background:#1a1a1a; cursor:pointer;" data-src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800">
+                    <div class="step-icon">🎨</div>
+                    <h3>Интерьерные дизайнеры</h3>
+                    <p>Для проектов в стилях барокко, шебби-шик, эклектика, богемный шик. Кукла становится смысловым центром помещения.</p>
+                </div>
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=400" alt="Коллекционные фигурки" class="lightbox" style="width:100%; height:160px; object-fit: contain; object-position: center; border:1px solid var(--gold); margin-bottom:15px; background:#1a1a1a; cursor:pointer;" data-src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800">
+                    <div class="step-icon">🏺</div>
+                    <h3>Коллекционеры</h3>
+                    <p>Авторская кукла с паспортом экземпляра — ценное приобретение для собрания. Второй такой нет.</p>
+                </div>
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400" alt="Подарочная упаковка люкс" class="lightbox" style="width:100%; height:160px; object-fit: contain; object-position: center; border:1px solid var(--gold); margin-bottom:15px; background:#1a1a1a; cursor:pointer;" data-src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800">
+                    <div class="step-icon">🎁</div>
+                    <h3>Подарки класса «Люкс»</h3>
+                    <p>Когда цена не имеет значения, важна только уникальность. Персонализированный образ, упаковка ручной работы.</p>
+                </div>
+                <div class="process-step">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=400" alt="Ивент-декор" class="lightbox" style="width:100%; height:160px; object-fit: contain; object-position: center; border:1px solid var(--gold); margin-bottom:15px; background:#1a1a1a; cursor:pointer;" data-src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800">
+                    <div class="step-icon">🏛</div>
+                    <h3>Ивент-декор</h3>
+                    <p>Украшение витрин, бутиков, ресторанных залов. Подвесные Арлекины создают неповторимую атмосферу.</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px; padding: 50px 30px; background: var(--bg-section); border: 1px solid var(--gold); text-align: center;">
+            <h2 class="section-title">Madrigal. Там, где фарфор оживает, а шёлк звучит</h2>
+            <p style="max-width: 700px; margin: 20px auto; color: var(--text-light); font-size: 1.1rem;">Принимаем заказы на индивидуальные цветовые сочетания. Ваша палитра — наша доработка. Срок создания куклы «под заказ» — от 14 до 30 дней. Доставка по всему миру в специальной хрупкой упаковке с вакуумным креплением фарфора.</p>
+            <a href="#contact" class="btn-royal" style="margin-top: 20px;">Начать создание своей куклы</a>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <h2 class="section-title">Избранные работы</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div class="gallery-img lightbox" style="background-image: url('https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5D77WTEd.jpg');" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5D77WTEd.jpg" title="Нажмите для увеличения"></div>
+                    <h3>Арлекин «Luna»</h3><p>Чёрный шёлк, серебро, лунный камень</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img lightbox" style="background-image: url('https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5OacCmXi.jpg');" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_5OacCmXi.jpg" title="Нажмите для увеличения"></div>
+                    <h3>Арлекин «Sole»</h3><p>Золото, пурпур, кристаллы Swarovski</p>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-img lightbox" style="background-image: url('https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_PdkXjziS.jpg');" data-src="https://ukit.com/uploads/s/b/l/g/blgabdqnmgcv/img/full_PdkXjziS.jpg" title="Нажмите для увеличения"></div>
+                    <h3>Большая кукла</h3><p>Фарфор, винтажное кружево</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="#contact" class="btn-royal">Посмотреть все работы</a>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <h2 class="section-title">Впечатления владельцев</h2>
+            <div class="testimonials">
+                <div class="testimonial-card"><p class="testimonial-text">Арлекин Madrigal преобразил мою гостиную. Это не кукла, а настоящее произведение искусства, которое задаёт тон всему дому.</p><p class="testimonial-author">— Александр Бельский, Москва</p></div>
+                <div class="testimonial-card"><p class="testimonial-text">Заказывала подвесных кукол для витрины бутика — клиенты в восторге, фотографируются каждый день. Идеальное попадание в атмосферу бренда.</p><p class="testimonial-author">— Мария Лопухина, Москва</p></div>
+            </div>
+        </section>
+
+        <section style="margin-top: 80px;">
+            <h2 class="section-title">Ответы на вопросы</h2>
+            <div class="faq-block" id="faq-block">
+                <div class="faq-item"><div class="faq-question">▶ Как долго изготавливается кукла?</div><div class="faq-answer">От 14 до 30 дней в зависимости от сложности образа и загруженности мастера. Точные сроки фиксируются в договоре.</div></div>
+                <div class="faq-item"><div class="faq-question">▶ Можно ли выбрать цветовую гамму?</div><div class="faq-answer">Да, мы работаем по вашей индивидуальной палитре. Вы предоставляете референсы, мы адаптируем образ.</div></div>
+                <div class="faq-item"><div class="faq-question">▶ Есть ли доставка в другие страны?</div><div class="faq-answer">Global shipping с особой упаковкой, которая исключает повреждение фарфора.</div></div>
+                <div class="faq-item"><div class="faq-question">▶ Что делать, если кукла повреждена при транспортировке?</div><div class="faq-answer">Мы полностью страхуем отправление и в случае форс-мажора восстанавливаем изделие или создаём новое.</div></div>
+            </div>
+        </section>
+
+        <section id="contact" style="margin-top: 80px;">
+            <h2 class="section-title">Свяжитесь с мастером</h2>
+            <div class="contact-row">
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="4" placeholder="Опишите пожелания или задайте вопрос..."></textarea>
+                    <button type="submit" class="btn-royal">Отправить</button>
+                </form>
+                <div class="contact-info">
+                    <p>📞 +7 (495) 123-45-67</p>
+                    <p>✉️ madrigal@imperial.ru</p>
+                    <p>📍 Москва, Пречистенка, 42</p>
+                    <p style="margin-top: 20px; font-size: 0.9rem;">Личные встречи — по предварительной записи.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer-imperial">
+        <p class="footer-motto">Второй такой нет</p>
+        <div class="footer-links">
+            <a href="#">Главная</a><a href="#">Коллекции</a><a href="#">О мастере</a><a href="#">Доставка</a><a href="#">Контакты</a>
+        </div>
+        <p class="copyright">© Madrigal, 2026. Москва. Театр интерьерной куклы. Все права защищены.</p>
+    </footer>
+</div>
+
+<div id="image-modal" class="modal">
+    <span class="modal-close" id="modal-close">&times;</span>
+    <img id="modal-image" class="modal-content" src="" alt="Увеличенное изображение">
+</div>
+
+<script>
+    // FAQ
+    const faqBlock = document.getElementById('faq-block');
+    faqBlock.addEventListener('click', (e) => {
+        const item = e.target.closest('.faq-item');
+        if (item) {
+            const active = faqBlock.querySelector('.faq-item.active');
+            if (active && active !== item) active.classList.remove('active');
+            item.classList.toggle('active');
+        }
+    });
+
+    // Плавный скролл
+    document.querySelectorAll('a[href="#contact"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    // Лайтбокс
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-image');
+    const closeBtn = document.getElementById('modal-close');
+
+    function openLightbox(src) {
+        if (!src) return;
+        modalImg.src = src;
+        modal.classList.add('active');
+    }
+
+    document.querySelectorAll('.lightbox').forEach(el => {
+        el.addEventListener('click', function(e) {
+            if (e.target.closest('a, button')) return;
+            let src = this.getAttribute('data-src');
+            if (!src && this.tagName === 'IMG') src = this.src;
+            else if (!src && this.style.backgroundImage) src = this.style.backgroundImage.slice(5, -2);
+            openLightbox(src);
+        });
+        el.addEventListener('touchend', function(e) {
+            e.preventDefault();
+            let src = this.getAttribute('data-src');
+            if (!src && this.tagName === 'IMG') src = this.src;
+            else if (!src && this.style.backgroundImage) src = this.style.backgroundImage.slice(5, -2);
+            openLightbox(src);
+        });
+    });
+
+    closeBtn.addEventListener('click', () => modal.classList.remove('active'));
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) modal.classList.remove('active');
+    });
+</script>
+</body>
+</html>
